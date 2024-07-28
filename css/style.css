@@ -664,7 +664,7 @@ footer p{
 
     .box-container__contact{
         margin: auto;
-        max-width: 31.25rem;
+        width: 31.25rem;
     }
     .main-contact .form-p{
         max-width: 23.75rem;
@@ -705,7 +705,7 @@ footer p{
 }
     /* -------- LOCATION STYLE --------*/
     .main-location{
-        margin: 30px auto;
+        margin: 1.875rem auto;
     }
     iframe{
         width: 430px;
@@ -820,32 +820,40 @@ footer p{
     }
     
     /* ------- CONTACT STYLE --------*/
+    .main-contact{
+        margin: auto;
+    }
     .main-contact .box-container__contact{
-        max-width: 300px;
+        width: 100%;
     }
     .form-tittle{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .main-contact .form-p{
         font-size: .8rem;
-        width: 250px;
-        margin: 5px 0;
+        width: 15.625rem;
+        margin: .3125rem 0;
     }
 
     .contact-form{
         margin: auto;
-        max-width: 280px;
+        max-width: 30rem;
+    }
+
+    .box-form{
+        width: 20.625rem;
+        margin: .625rem 0;
     }
     fieldset legen, fieldset input{
         margin: auto;
-        width: 13.125rem;
-        height: 1.25rem;
+        width: 15.625rem;
+        height: 1.125rem;
     }
     .message{
-        width: 220px;
+        width: 15.625rem;
     }
     fieldset textarea{
-        width: 13.125rem;
+        width: 15.625rem;
         height: 1.875rem;
     }
     .contact-information{
@@ -862,19 +870,23 @@ footer p{
         margin:auto;
     }
     .main-location h2{
-        font-size: 19px;
+        font-size: 1.1875rem;
     }
     .main-location p{
-        font-size: 12px;
+        font-size: .75rem;
     }
     iframe{
-        width: 300px;
-        height: 400px;
+        width: 18.75rem;
+        height: 25rem;
     }
     .contact-information__text p, .contact-information__text h3{
-        font-size: 12px;
+        font-size: .75rem;
     }
     /* ------ FOOTER ------- */
+    footer{
+        border-top: 2px solid #e2e2e2;
+    }
+
     .footer-socialMedia{
         display: grid;
         grid-template-areas:
@@ -896,7 +908,7 @@ footer p{
         grid-area: emailFt;
     }
     .footer-socialMedia a{
-        font-size: 12px;
+        font-size: .75rem;
     }
     .footer-navbar{    
         font-size: .5rem;
