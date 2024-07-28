@@ -730,6 +730,9 @@ footer p{
         display: block;
         color: #e2e2e2;
     }
+    header{
+        border-bottom: 2px solid #e2e2e2;
+    }
     .header-navbar{
         display: none;
         flex-direction:column;
@@ -783,17 +786,20 @@ footer p{
 
     /* ------- CARS STYLE -------*/
     .main-cars{
-        max-width: 300px;
-        margin: 10px auto;
+        max-width: 100%;
+        margin:auto;
     }
     
     .main-cars section{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap:20px;
+
     }
     .main-cars section article{
         border-radius: 30px;
+        width: 18.75rem;
+        height: 31.25rem;
     }
 
     .main-cars section article h3{
