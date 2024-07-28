@@ -261,7 +261,7 @@ margin: auto;
 }
 
 .box-container__contact{
-    margin: 1.875rem;
+    margin: auto;
     background-color: #232328;
     color: #e2e2e2;
     padding: 16px;
@@ -671,6 +671,7 @@ footer p{
     }
     .box-form{
         padding: 0;
+        max-width: 25rem;
     }
     .contact-form{
         margin: auto;
