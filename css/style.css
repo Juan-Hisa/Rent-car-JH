@@ -307,6 +307,7 @@ margin: auto;
 
 .phone{
     grid-area: phone;
+    color: #e2e2e2;
 }
 
 .email{
@@ -450,17 +451,8 @@ fieldset textarea:hover{
 /* ------- FAQ´S STYLE --------- */
 
 /* ------ STYLE ACCORDION BOOSTRAP ------*/
-
-.main-faq{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .accordion-item{
     color: #e2e2e2;
-    width: 900px;
-    margin: 20px;
 }
 
 .accordion-body{
@@ -724,6 +716,7 @@ footer p{
         text-align: center;
     }
 
+
 /* ------- IPHONE SE SCREEN ---------*/
 @media only screen and (max-width:480px){
     /* ------- HEADER -------- */
@@ -883,6 +876,13 @@ footer p{
     .contact-information__text p, .contact-information__text h3{
         font-size: .75rem;
     }
+
+
+    /* -------FAQ BOOSTRAP ------ */
+    .accordion .accordion-flush{
+        width: 300px ;
+    }
+
     /* ------ FOOTER ------- */
     footer{
         border-top: 2px solid #e2e2e2;
