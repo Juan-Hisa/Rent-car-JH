@@ -1,0 +1,350 @@
+/* ---- UTILITIES -----*/
+/* ----- BASE -----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button, input {
+  all: unset; }
+
+body {
+  font-family: "barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #1d1d1e;
+  max-width: 93.75rem;
+  margin: auto; }
+
+/* ----- LAYOUT -----*/
+/* ---- HEADER -----*/
+header {
+  background-color: #232328;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header h1 {
+    font-weight: 600;
+    color: #e2e2e2;
+    padding: 0; }
+
+.login-box {
+  display: flex; }
+  .login-box div {
+    border-left: 2px solid #49444b;
+    margin-right: .125rem; }
+    .login-box div a {
+      display: flex;
+      justify-items: center;
+      color: #e2e2e2;
+      margin-left: .625rem;
+      margin-right: .125rem; }
+      .login-box div a:hover {
+        color: #399d4f;
+        border-radius: 100%; }
+      .login-box div a .material-symbols-outlined {
+        display: none;
+        border-radius: 100%; }
+
+.main-index {
+  color: #e2e2e2;
+  margin: 2rem; }
+  .main-index section {
+    background-color: #232328;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1.25rem;
+    margin: 1.875rem; }
+    .main-index section h2 {
+      letter-spacing: .125rem;
+      font-size: 1.875rem; }
+    .main-index section img {
+      width: 20rem;
+      height: 16.25rem;
+      margin: 1.25rem 0;
+      border-radius: 0px 20px 20px 20px;
+      box-shadow: 4px -2px 4px 0px #49444b; }
+    .main-index section .aboutUs-p {
+      max-width: 21.875rem;
+      align-content: center;
+      padding-bottom: 1.25rem;
+      margin: .625rem 0;
+      text-align: justify; }
+    .main-index section div {
+      margin: .625rem 0; }
+      .main-index section div p, .main-index .main-location section div .contact-information__box .contact-information__text h3, .main-location .main-index section div .contact-information__box .contact-information__text h3, .main-index .main-location section .contact-information__box .contact-information__text div h3, .main-location .main-index section .contact-information__box .contact-information__text div h3 {
+        margin: .9375rem;
+        letter-spacing: 1px; }
+  .main-index .section-aboutUs h2 {
+    color: #e2e2e2; }
+  .main-index .section-featuredCar h2 {
+    color: #e2bf42;
+    border-bottom: 2px solid; }
+
+.main-cars {
+  background-color: #232328;
+  color: #e2e2e2;
+  margin: 2rem;
+  padding: 1rem .5rem;
+  border-radius: 10px; }
+  .main-cars h2 {
+    text-align: center; }
+  .main-cars section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.25rem; }
+    .main-cars section article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.75rem;
+      color: #e2e2e2;
+      background-color: #49444b;
+      margin: .9375rem;
+      border-radius: 5px; }
+      .main-cars section article img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 1.25rem; }
+      .main-cars section article h3 {
+        font-weight: 600;
+        margin-top: .3125rem; }
+      .main-cars section article div p, .main-cars .main-location section article div .contact-information__box .contact-information__text h3, .main-location .main-cars section article div .contact-information__box .contact-information__text h3, .main-cars .main-location section .contact-information__box .contact-information__text article div h3, .main-location .main-cars section .contact-information__box .contact-information__text article div h3 {
+        margin: .3125rem;
+        text-align: center; }
+      .main-cars section article div .car-info {
+        color: #e2e2e2; }
+        .main-cars section article div .car-info:hover {
+          border-bottom: 1px solid #e2e2e2; }
+
+/* ----- MAIN CONTACT -----*/
+.main-contact {
+  margin: auto; }
+  .main-contact .box-container__contact {
+    margin: auto;
+    background-color: #232328;
+    color: #e2e2e2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+    .main-contact .box-container__contact h2 {
+      margin: .625rem 0; }
+    .main-contact .box-container__contact p, .main-contact .box-container__contact .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .main-contact .box-container__contact h3 {
+      text-align: center;
+      max-width: 34.375rem;
+      margin: .625rem; }
+
+.box-form {
+  background-color: #3d3a3e;
+  border-radius: 5px;
+  padding: 0 1.875rem; }
+  .box-form form {
+    margin: auto;
+    padding: 1.25rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: "name surname" "phone email" "message message";
+    grid-gap: 1.25rem; }
+    .box-form form .name {
+      grid-area: name; }
+    .box-form form .surname {
+      grid-area: surname; }
+    .box-form form .phone {
+      grid-area: phone #e2e2e2; }
+    .box-form form .email {
+      grid-area: email; }
+    .box-form form .message {
+      grid-area: message; }
+  .box-form div .contact-information p, .box-form div .contact-information .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .box-form div .contact-information h3, .box-form div .contact-information h3 {
+    margin: .625rem 0; }
+
+/* ----- LOCATION PAGE ------*/
+.main-location {
+  margin: 1rem;
+  color: #e2e2e2;
+  border-radius: 5px;
+  background-color: #232328;
+  padding: .625rem; }
+  .main-location section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-location section h2 {
+      margin: .3125rem 0; }
+    .main-location section p, .main-location section .contact-information__box .contact-information__text h3 {
+      margin: .3125rem 0; }
+    .main-location section .box-map iframe {
+      margin: 1rem 2rem;
+      background-color: #49444b;
+      border-radius: 5px;
+      padding: 1rem; }
+    .main-location section .contact-information__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 25rem; }
+      .main-location section .contact-information__box .contact-information__text {
+        text-align: left; }
+        .main-location section .contact-information__box .contact-information__text p, .main-location section .contact-information__box .contact-information__text h3 {
+          margin: .625rem 0; }
+
+footer {
+  background-color: #232328;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px; }
+  footer div ul li {
+    margin: 1.25rem 0; }
+    footer div ul li a {
+      color: #e2e2e2; }
+      footer div ul li a:hover {
+        border-bottom: 2px solid #e2e2e2; }
+  footer p, footer .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text footer h3 {
+    color: #49444b;
+    display: flex;
+    align-items: end; }
+
+/* ----- COMPONENTS ------- */
+/* ----- BOOSTRAP MENU ----*/
+.accordion-item {
+  color: #e2e2e2; }
+
+.accordion-body, .accordion-button, .accordion-button:not(.collapsed), .accordion-button .collapsed {
+  background-color: #3d3a3e;
+  color: #e2e2e2; }
+
+.accordion-button .collapsed {
+  color: #999; }
+
+/* ----- BUTTONS -------*/
+/* ----- INDEX PAGE ----*/
+.main-index section .rent-button {
+  margin: .625rem; }
+  .main-index section .rent-button button, .main-index section .rent-button input {
+    background-color: #399d4f;
+    border-radius: 10px;
+    padding: .625rem;
+    margin-right: .625rem; }
+    .main-index section .rent-button button:hover, .main-index section .rent-button input:hover {
+      background-color: #399d4f77;
+      border: 1px solid #e2bf42; }
+    .main-index section .rent-button button a, .main-index section .rent-button input a {
+      color: #e2e2e2; }
+  .main-index section .rent-button .rent-information {
+    color: #e2e2e2; }
+    .main-index section .rent-button .rent-information:hover {
+      border-bottom: 1px solid #e2e2e2; }
+
+/* ----- CARS PAGE -----*/
+.main-cars section div button, .main-cars section div input {
+  margin: .3125rem;
+  background-color: #399d4f77;
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin-right: 6.25rem;
+  margin-top: 1.25rem; }
+  .main-cars section div button:hover, .main-cars section div input:hover {
+    background-color: #399d4f; }
+  .main-cars section div button a, .main-cars section div input a {
+    color: #e2e2e2; }
+
+/* ---- CONTACT INPUTS -----*/
+.main-contact .box-form form {
+  /* --- FLECHAS INCREMENTO - DECREMENTO OCULTAS -----*/ }
+  .main-contact .box-form form input[type="number"]::-webkit-outer-spin-button, .main-contact .box-form form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  .main-contact .box-form form fieldset {
+    color: transparent;
+    border: 2px solid #9999;
+    border-radius: 5px;
+    margin: .625rem 0;
+    padding: .3125rem;
+    color: #9999; }
+    .main-contact .box-form form fieldset:hover {
+      border: 2px solid #e2e2e2;
+      border-radius: 5px;
+      color: #e2e2e2; }
+    .main-contact .box-form form fieldset legend {
+      margin: 0 .625rem;
+      padding: 0 .625rem; }
+    .main-contact .box-form form fieldset input {
+      padding: .625rem;
+      width: 25rem;
+      border-bottom: 1px solid #9999;
+      color: #9999;
+      max-width: 18.75rem; }
+      .main-contact .box-form form fieldset input:hover {
+        border-bottom: 1px solid #e2e2e2;
+        color: #e2e2e2; }
+    .main-contact .box-form form fieldset textarea {
+      margin: .625rem;
+      width: 95%;
+      resize: none;
+      min-height: 12.5rem;
+      max-height: 18.75rem;
+      font-family: "barlow",sans-serif;
+      background-color: transparent;
+      border-radius: 5px;
+      color: #3d3a3e;
+      padding: .125rem .3125rem; }
+      .main-contact .box-form form fieldset textarea:hover {
+        border: 2px solid #e2e2e2;
+        border-radius: 5px;
+        color: #e2e2e2; }
+    .main-contact .box-form form fieldset .box-button {
+      display: flex;
+      justify-content: center;
+      grid-column: 1/-1; }
+      .main-contact .box-form form fieldset .box-button input {
+        border-radius: 7px;
+        padding: .625rem 1.125rem;
+        background-color: #399d4f;
+        font-size: 1.25rem;
+        font-weight: 500; }
+        .main-contact .box-form form fieldset .box-button input:hover {
+          background-color: #399d4f;
+          box-shadow: 2px 0px 2px 0px #399d4f77; }
+
+/* ---- HEADER NAVBAR -----*/
+nav .label-menu {
+  display: none;
+  cursor: pointer; }
+
+nav #menu-toggle {
+  display: none; }
+
+nav .header-navbar {
+  display: flex;
+  margin-right: 6.25rem; }
+  nav .header-navbar li {
+    margin: 0 .3125rem; }
+    nav .header-navbar li a {
+      color: #e2e2e2; }
+      nav .header-navbar li a:hover {
+        border-bottom: 1px solid #d9d9d9; }
+
+/* ----- FOOTER NAVBAR -----*/
+footer nav div {
+  border-left: 2px solid #49444b; }
+  footer nav div li {
+    margin: .9375rem 0;
+    padding-left: 1.25rem; }
+    footer nav div li a {
+      color: #999; }
+      footer nav div li a:hover {
+        border-bottom: 2px solid #49444b; }
+
+/* ---- MEDIA QUERIES -----*/

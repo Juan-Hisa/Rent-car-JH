@@ -1,0 +1,35 @@
+/* ---- HEADER -----*/
+header{
+    background-color:  map-get($colors , color8 );
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-weight: 600;
+        color: map-get($colors, color1 );
+        padding: 0;
+    }
+}
+.login-box{
+    display: flex;
+    div{
+        border-left: 2px solid map-get($colors, color2 );
+        margin-right: .125rem;
+        a{
+            display: flex;
+            justify-items: center;
+            color: map-get($colors, color1 );
+            margin-left: .625rem;
+            margin-right: .125rem;
+            &:hover{
+                color: map-get($colors, color6 );
+                border-radius: 100%;
+            }
+            .material-symbols-outlined{
+                display: none;
+                border-radius: 100%;
+            }
+        }
+    }
+}

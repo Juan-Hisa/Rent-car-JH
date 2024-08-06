@@ -1,0 +1,21 @@
+/* ----- BOOSTRAP MENU ----*/
+.accordion-item{
+    color:  map-get($colors , color1);
+}
+
+.accordion-body{
+    background-color: map-get($colors , color3 );
+    color:  map-get($colors ,   color1 );
+}
+
+.accordion-button{
+    @extend .accordion-body;
+}
+.accordion-button:not(.collapsed){
+    @extend .accordion-body;
+}
+
+.accordion-button .collapsed{ 
+    @extend .accordion-body;
+    color: map-get($colors , color4 )
+}

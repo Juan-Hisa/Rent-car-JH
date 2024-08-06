@@ -1,0 +1,74 @@
+/* ---- CONTACT INPUTS -----*/
+.main-contact{
+    .box-form{
+        form{
+                    /* --- FLECHAS INCREMENTO - DECREMENTO OCULTAS -----*/
+            input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+            }
+            fieldset{
+                color: transparent;
+                border: 2px solid map-get($colors , color5);
+                border-radius: 5px;
+                margin: .625rem 0;
+                padding: .3125rem;
+                color: map-get($colors , color5 );
+                &:hover{
+                    border: 2px solid map-get($colors , color1);
+                    border-radius: 5px;
+                    color: map-get($colors , color1);
+                }
+                legend{
+                    margin: 0 .625rem;
+                    padding: 0 .625rem;
+                }
+                input{
+                    padding: .625rem;
+                    width: 25rem;
+                    border-bottom: 1px solid map-get($colors , color5);
+                    color: map-get($colors , color5 );
+                    max-width: 18.75rem;
+                    &:hover{
+                        border-bottom: 1px solid map-get($colors , color1 );
+                        color: map-get($colors ,color1);
+                    }
+                }
+                textarea{
+                    margin: .625rem;
+                    width: 95%;
+                    resize: none;
+                    min-height: 12.5rem;
+                    max-height: 18.75rem;
+                    font-family: "barlow",sans-serif;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    color:  map-get($colors , color3 );
+                    padding: .125rem .3125rem;
+                    &:hover{
+                        border: 2px solid  map-get($colors , color1);
+                        border-radius: 5px;
+                        color:  map-get($colors ,color1 );
+                    }
+                }
+                .box-button{
+                    display: flex;
+                    justify-content: center;
+                    grid-column: 1/-1;
+                    input{
+                        border-radius: 7px;
+                        padding: .625rem 1.125rem;
+                        background-color:  map-get($colors , color6 );
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        &:hover{
+                            background-color:  map-get($colors , color6 );
+                            box-shadow: 2px 0px 2px 0px  map-get($colors , color7 )
+                        }
+                        
+                    }
+                }
+            }
+            
+        }  
+    }
+}

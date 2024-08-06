@@ -1,0 +1,50 @@
+/* ----- BUTTONS -------*/
+/* ----- INDEX PAGE ----*/
+.main-index{
+    section{
+        .rent-button{
+            margin: .625rem;
+            button{
+                background-color:  map-get($colors , color6 );
+                border-radius: 10px;
+                padding: .625rem;
+                margin-right: .625rem;
+                &:hover{
+                    background-color:  map-get($colors , color7);
+                    border: 1px solid  map-get($colors , color9);
+                }
+                a{
+                    color:  map-get($colors , color1 );
+                }
+            }
+            .rent-information{
+                color: map-get($colors , color1 );
+                &:hover{
+                    border-bottom: 1px solid  map-get($colors , color1);
+                }
+            }
+        }
+    }
+}
+
+/* ----- CARS PAGE -----*/
+.main-cars{
+    section{
+        div{
+            button{
+                margin: .3125rem;
+                background-color:  map-get($colors , color7);
+                border-radius: 20px;
+                padding: 1.25rem;
+                margin-right: 6.25rem;
+                margin-top: 1.25rem;
+                &:hover{
+                    background-color:  map-get($colors , color6);
+                }
+                a{
+                    color:  map-get($colors , color1);
+                }
+            }
+        }
+    }
+}

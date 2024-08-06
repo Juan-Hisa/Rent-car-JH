@@ -1,0 +1,38 @@
+/* ----- LOCATION PAGE ------*/
+.main-location{
+    margin: 1rem;
+    color: map-get($colors , color1 );
+    border-radius: 5px;
+    background-color: map-get($colors , color8);
+    padding: .625rem;
+    section{
+        @include flex_colum-center;
+        h2{
+            margin: .3125rem 0;
+        }
+        p{
+            margin: .3125rem 0;
+        }
+        .box-map{
+            iframe{
+                margin: 1rem 2rem;
+                background-color: map-get($colors , color2 );
+                border-radius: 5px;
+                padding: 1rem;
+            }
+        }
+    .contact-information__box{
+        @include flex;
+        margin-right: 25rem;
+        .contact-information__text{
+            text-align: left;
+            p{
+                margin:.625rem 0;
+            }
+            h3{
+                @extend p
+            }
+        }
+    }
+    }
+}

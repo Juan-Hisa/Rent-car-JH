@@ -1,0 +1,47 @@
+.main-index{
+    color:map-get($colors , color1 );
+    margin: 2rem;
+    section{
+        background-color: map-get($colors ,color8 );
+        @include flex_colum-center;
+        border-radius: 5px;
+        padding: 1.25rem;
+        margin: 1.875rem;
+        h2{
+            letter-spacing: .125rem;
+            font-size: 1.875rem;
+        }
+        img{
+            width: 20rem;
+            height: 16.25rem;
+            margin: 1.25rem 0;
+            border-radius: 0px 20px 20px 20px;
+            box-shadow: 4px -2px 4px 0px map-get($colors , color2 );
+        }
+        .aboutUs-p{
+            max-width: 21.875rem;
+            align-content: center;
+            padding-bottom: 1.25rem;
+            margin: .625rem 0;
+            text-align: justify;
+        }
+        div{
+            margin: .625rem 0;
+            p{
+                margin: .9375rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .section-aboutUs{
+        h2{
+            color: map-get($colors , color1 );
+        }
+    }
+    .section-featuredCar{
+        h2{
+            color: map-get($colors, color9 );
+            border-bottom: 2px solid map-get($colors , color19);
+        }
+    }
+}

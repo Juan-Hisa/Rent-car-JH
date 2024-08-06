@@ -1,0 +1,23 @@
+
+/* ---- UTILITIES -----*/
+@import "./utilities/_mixins.scss";
+@import "./utilities/_maps.scss";
+
+/* ----- BASE -----*/
+@import "./base/_reset.scss";
+
+/* ----- LAYOUT -----*/
+@import "./layout/_header.scss";
+@import "./layout/_main-index.scss";
+@import "./layout/_main-cars.scss";
+@import "./layout/_main-contact.scss";
+@import "./layout/_main-location.scss";
+@import "./layout/_footer.scss";
+
+/* ----- COMPONENTS ------- */
+@import "./components/_boostrap-faq.scss";
+@import "./components/_buttons.scss";
+@import "./components/_inputs.scss";
+@import "./components/_navbar.scss";
+
+/* ---- MEDIA QUERIES -----*/

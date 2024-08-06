@@ -1,0 +1,43 @@
+
+/* ---- HEADER NAVBAR -----*/
+nav{
+    .label-menu{
+        display: none;
+        cursor: pointer;
+    }
+    #menu-toggle{
+        display: none;
+    }
+    .header-navbar{
+        display: flex;
+        margin-right: 6.25rem;
+        li{
+            margin: 0 .3125rem;
+            a{
+                color: map-get($colors , color1);
+                &:hover{
+                    border-bottom: 1px solid #d9d9d9;
+                }
+            }
+        }
+    }
+}
+
+/* ----- FOOTER NAVBAR -----*/
+footer{
+    nav{
+        div{
+            border-left: 2px solid map-get($colors , color2);
+            li{
+                margin: .9375rem 0;
+                padding-left: 1.25rem;
+                a{
+                    color:map-get($colors , color4);
+                    &:hover{
+                        border-bottom: 2px solid map-get($colors , color2 )
+                    }
+                }
+            }
+        }
+    }
+}
