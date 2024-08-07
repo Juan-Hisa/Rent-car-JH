@@ -56,7 +56,7 @@ header {
 .main-index {
   color: #e2e2e2;
   margin: 2rem; }
-  .main-index section {
+  .main-index section, .main-index .main-location section .contact-information__box, .main-location section .main-index .contact-information__box {
     background-color: #232328;
     display: flex;
     flex-direction: column;
@@ -64,24 +64,24 @@ header {
     border-radius: 5px;
     padding: 1.25rem;
     margin: 1.875rem; }
-    .main-index section h2 {
+    .main-index section h2, .main-index .main-location section .contact-information__box h2, .main-location section .main-index .contact-information__box h2 {
       letter-spacing: .125rem;
       font-size: 1.875rem; }
-    .main-index section img {
+    .main-index section img, .main-index .main-location section .contact-information__box img, .main-location section .main-index .contact-information__box img {
       width: 20rem;
       height: 16.25rem;
       margin: 1.25rem 0;
       border-radius: 0px 20px 20px 20px;
       box-shadow: 4px -2px 4px 0px #49444b; }
-    .main-index section .aboutUs-p {
+    .main-index section .aboutUs-p, .main-location section .main-index .contact-information__box .aboutUs-p {
       max-width: 21.875rem;
       align-content: center;
       padding-bottom: 1.25rem;
       margin: .625rem 0;
       text-align: justify; }
-    .main-index section div {
+    .main-index section div, .main-index .main-location section .contact-information__box div, .main-location section .main-index .contact-information__box div {
       margin: .625rem 0; }
-      .main-index section div p, .main-index .main-location section div .contact-information__box .contact-information__text h3, .main-location .main-index section div .contact-information__box .contact-information__text h3, .main-index .main-location section .contact-information__box .contact-information__text div h3, .main-location .main-index section .contact-information__box .contact-information__text div h3 {
+      .main-index section div p, .main-index .main-location section .contact-information__box div p, .main-location section .main-index .contact-information__box div p, .main-index .main-location section div .contact-information__box .contact-information__text h3, .main-location .main-index section div .contact-information__box .contact-information__text h3, .main-location .main-index section .contact-information__box .contact-information__text div h3, .main-index .main-location section .contact-information__box div .contact-information__text h3, .main-index .main-location section .contact-information__box .contact-information__text div h3, .main-location section .main-index .contact-information__box div .contact-information__text h3, .main-location section .main-index .contact-information__box .contact-information__text div h3 {
         margin: .9375rem;
         letter-spacing: 1px; }
   .main-index .section-aboutUs h2 {
@@ -98,11 +98,11 @@ header {
   border-radius: 10px; }
   .main-cars h2 {
     text-align: center; }
-  .main-cars section {
+  .main-cars section, .main-cars .main-location section .contact-information__box, .main-location section .main-cars .contact-information__box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.25rem; }
-    .main-cars section article {
+    .main-cars section article, .main-cars .main-location section .contact-information__box article, .main-location section .main-cars .contact-information__box article {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -111,21 +111,21 @@ header {
       background-color: #49444b;
       margin: .9375rem;
       border-radius: 5px; }
-      .main-cars section article img {
+      .main-cars section article img, .main-cars .main-location section .contact-information__box article img, .main-location section .main-cars .contact-information__box article img {
         width: 60%;
         height: 60%;
         object-fit: cover;
         border-radius: 20px;
         margin: 1.25rem; }
-      .main-cars section article h3 {
+      .main-cars section article h3, .main-cars .main-location section .contact-information__box article h3, .main-location section .main-cars .contact-information__box article h3 {
         font-weight: 600;
         margin-top: .3125rem; }
-      .main-cars section article div p, .main-cars .main-location section article div .contact-information__box .contact-information__text h3, .main-location .main-cars section article div .contact-information__box .contact-information__text h3, .main-cars .main-location section .contact-information__box .contact-information__text article div h3, .main-location .main-cars section .contact-information__box .contact-information__text article div h3 {
+      .main-cars section article div p, .main-cars .main-location section .contact-information__box article div p, .main-location section .main-cars .contact-information__box article div p, .main-cars .main-location section article div .contact-information__box .contact-information__text h3, .main-location .main-cars section article div .contact-information__box .contact-information__text h3, .main-location .main-cars section .contact-information__box .contact-information__text article div h3, .main-cars .main-location section .contact-information__box article div .contact-information__text h3, .main-cars .main-location section .contact-information__box .contact-information__text article div h3, .main-location section .main-cars .contact-information__box article div .contact-information__text h3, .main-location section .main-cars .contact-information__box .contact-information__text article div h3 {
         margin: .3125rem;
         text-align: center; }
-      .main-cars section article div .car-info {
+      .main-cars section article div .car-info, .main-location section .main-cars .contact-information__box article div .car-info {
         color: #e2e2e2; }
-        .main-cars section article div .car-info:hover {
+        .main-cars section article div .car-info:hover, .main-location section .main-cars .contact-information__box article div .car-info:hover {
           border-bottom: 1px solid #e2e2e2; }
 
 /* ----- MAIN CONTACT -----*/
@@ -178,13 +178,13 @@ header {
   border-radius: 5px;
   background-color: #232328;
   padding: .625rem; }
-  .main-location section {
+  .main-location section, .main-location section .contact-information__box {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .main-location section h2 {
+    .main-location section h2, .main-location section .contact-information__box h2 {
       margin: .3125rem 0; }
-    .main-location section p, .main-location section .contact-information__box .contact-information__text h3 {
+    .main-location section p, .main-location section .contact-information__box p, .main-location section .contact-information__box .contact-information__text h3 {
       margin: .3125rem 0; }
     .main-location section .box-map iframe {
       margin: 1rem 2rem;
@@ -192,9 +192,7 @@ header {
       border-radius: 5px;
       padding: 1rem; }
     .main-location section .contact-information__box {
-      display: flex;
       justify-content: center;
-      align-items: center;
       margin-right: 25rem; }
       .main-location section .contact-information__box .contact-information__text {
         text-align: left; }
@@ -231,92 +229,91 @@ footer {
 
 /* ----- BUTTONS -------*/
 /* ----- INDEX PAGE ----*/
-.main-index section .rent-button {
+.main-index section .rent-button, .main-location section .main-index .contact-information__box .rent-button {
   margin: .625rem; }
-  .main-index section .rent-button button, .main-index section .rent-button input {
+  .main-index section .rent-button button, .main-location section .main-index .contact-information__box .rent-button button, .main-index section .rent-button input, .main-location section .main-index .contact-information__box .rent-button input {
     background-color: #399d4f;
     border-radius: 10px;
     padding: .625rem;
     margin-right: .625rem; }
-    .main-index section .rent-button button:hover, .main-index section .rent-button input:hover {
+    .main-index section .rent-button button:hover, .main-location section .main-index .contact-information__box .rent-button button:hover, .main-index section .rent-button input:hover, .main-location section .main-index .contact-information__box .rent-button input:hover {
       background-color: #399d4f77;
       border: 1px solid #e2bf42; }
-    .main-index section .rent-button button a, .main-index section .rent-button input a {
+    .main-index section .rent-button button a, .main-location section .main-index .contact-information__box .rent-button button a, .main-index section .rent-button input a, .main-location section .main-index .contact-information__box .rent-button input a {
       color: #e2e2e2; }
-  .main-index section .rent-button .rent-information {
+  .main-index section .rent-button .rent-information, .main-location section .main-index .contact-information__box .rent-button .rent-information {
     color: #e2e2e2; }
-    .main-index section .rent-button .rent-information:hover {
+    .main-index section .rent-button .rent-information:hover, .main-location section .main-index .contact-information__box .rent-button .rent-information:hover {
       border-bottom: 1px solid #e2e2e2; }
 
 /* ----- CARS PAGE -----*/
-.main-cars section div button, .main-cars section div input {
+.main-cars section div button, .main-cars .main-location section .contact-information__box div button, .main-location section .main-cars .contact-information__box div button, .main-cars section div input, .main-cars .main-location section .contact-information__box div input, .main-location section .main-cars .contact-information__box div input {
   margin: .3125rem;
   background-color: #399d4f77;
   border-radius: 20px;
   padding: 1.25rem;
   margin-right: 6.25rem;
   margin-top: 1.25rem; }
-  .main-cars section div button:hover, .main-cars section div input:hover {
+  .main-cars section div button:hover, .main-location section .main-cars .contact-information__box div button:hover, .main-cars section div input:hover, .main-location section .main-cars .contact-information__box div input:hover {
     background-color: #399d4f; }
-  .main-cars section div button a, .main-cars section div input a {
+  .main-cars section div button a, .main-cars .main-location section .contact-information__box div button a, .main-location section .main-cars .contact-information__box div button a, .main-cars section div input a, .main-cars .main-location section .contact-information__box div input a, .main-location section .main-cars .contact-information__box div input a {
     color: #e2e2e2; }
 
 /* ---- CONTACT INPUTS -----*/
-.main-contact .box-form form {
-  /* --- FLECHAS INCREMENTO - DECREMENTO OCULTAS -----*/ }
-  .main-contact .box-form form input[type="number"]::-webkit-outer-spin-button, .main-contact .box-form form input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; }
-  .main-contact .box-form form fieldset {
-    color: transparent;
-    border: 2px solid #9999;
+.main-contact .box-form form input[type="number"]::-webkit-outer-spin-button, .main-contact .box-form form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+.main-contact .box-form form fieldset {
+  color: transparent;
+  border: 2px solid #9999;
+  border-radius: 5px;
+  margin: .625rem 0;
+  padding: .3125rem;
+  color: #9999; }
+  .main-contact .box-form form fieldset:hover {
+    border: 2px solid #e2e2e2;
     border-radius: 5px;
-    margin: .625rem 0;
-    padding: .3125rem;
-    color: #9999; }
-    .main-contact .box-form form fieldset:hover {
+    color: #e2e2e2; }
+  .main-contact .box-form form fieldset legend {
+    margin: 0 .625rem;
+    padding: 0 .625rem; }
+  .main-contact .box-form form fieldset input {
+    padding: .625rem;
+    width: 25rem;
+    border-bottom: 1px solid #9999;
+    color: #9999;
+    max-width: 18.75rem; }
+    .main-contact .box-form form fieldset input:hover {
+      border-bottom: 1px solid #e2e2e2;
+      color: #e2e2e2; }
+  .main-contact .box-form form fieldset textarea {
+    margin: .625rem;
+    width: 95%;
+    resize: none;
+    min-height: 12.5rem;
+    max-height: 18.75rem;
+    font-family: "barlow",sans-serif;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #3d3a3e;
+    padding: .125rem .3125rem; }
+    .main-contact .box-form form fieldset textarea:hover {
       border: 2px solid #e2e2e2;
       border-radius: 5px;
       color: #e2e2e2; }
-    .main-contact .box-form form fieldset legend {
-      margin: 0 .625rem;
-      padding: 0 .625rem; }
-    .main-contact .box-form form fieldset input {
-      padding: .625rem;
-      width: 25rem;
-      border-bottom: 1px solid #9999;
-      color: #9999;
-      max-width: 18.75rem; }
-      .main-contact .box-form form fieldset input:hover {
-        border-bottom: 1px solid #e2e2e2;
-        color: #e2e2e2; }
-    .main-contact .box-form form fieldset textarea {
-      margin: .625rem;
-      width: 95%;
-      resize: none;
-      min-height: 12.5rem;
-      max-height: 18.75rem;
-      font-family: "barlow",sans-serif;
-      background-color: transparent;
-      border-radius: 5px;
-      color: #3d3a3e;
-      padding: .125rem .3125rem; }
-      .main-contact .box-form form fieldset textarea:hover {
-        border: 2px solid #e2e2e2;
-        border-radius: 5px;
-        color: #e2e2e2; }
-    .main-contact .box-form form fieldset .box-button {
-      display: flex;
-      justify-content: center;
-      grid-column: 1/-1; }
-      .main-contact .box-form form fieldset .box-button input {
-        border-radius: 7px;
-        padding: .625rem 1.125rem;
+  .main-contact .box-form form fieldset .box-button {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/-1; }
+    .main-contact .box-form form fieldset .box-button input {
+      border-radius: 7px;
+      padding: .625rem 1.125rem;
+      background-color: #399d4f;
+      font-size: 1.25rem;
+      font-weight: 500; }
+      .main-contact .box-form form fieldset .box-button input:hover {
         background-color: #399d4f;
-        font-size: 1.25rem;
-        font-weight: 500; }
-        .main-contact .box-form form fieldset .box-button input:hover {
-          background-color: #399d4f;
-          box-shadow: 2px 0px 2px 0px #399d4f77; }
+        box-shadow: 2px 0px 2px 0px #399d4f77; }
 
 /* ---- HEADER NAVBAR -----*/
 nav .label-menu {
@@ -348,3 +345,257 @@ footer nav div {
         border-bottom: 2px solid #49444b; }
 
 /* ---- MEDIA QUERIES -----*/
+@media only screen and (max-width: 768px) {
+  body header h1 {
+    display: none; }
+  body .main-index {
+    max-width: 37.5rem;
+    margin: auto; }
+    body .main-index section, body .main-index .main-location section .contact-information__box, .main-location section body .main-index .contact-information__box {
+      border-radius: 20px; }
+      body .main-index section h2, body .main-index .main-location section .contact-information__box h2, .main-location section body .main-index .contact-information__box h2 {
+        letter-spacing: normal;
+        font-size: 1.5rem; }
+      body .main-index section .section_imgAboutUs, .main-location section body .main-index .contact-information__box .section_imgAboutUs {
+        border-radius: 100%;
+        width: 12.5rem;
+        height: 12.5rem;
+        transform: scale(0.9); }
+      body .main-index section .section-img_featured, .main-location section body .main-index .contact-information__box .section-img_featured {
+        border-radius: 100%;
+        width: 14.625rem;
+        height: 12.5rem;
+        transform: scale(0.85); }
+      body .main-index section p, body .main-index .main-location section .contact-information__box p, .main-location section body .main-index .contact-information__box p, .main-location body .main-index section .contact-information__box .contact-information__text h3, body .main-index .main-location section .contact-information__box .contact-information__text h3, .main-location section body .main-index .contact-information__box .contact-information__text h3 {
+        letter-spacing: normal;
+        font-size: 1rem;
+        text-align: center;
+        width: 15.625rem; }
+      body .main-index section div p, body .main-index .main-location section .contact-information__box div p, .main-location section body .main-index .contact-information__box div p, body .main-index .main-location section div .contact-information__box .contact-information__text h3, .main-location body .main-index section div .contact-information__box .contact-information__text h3, .main-location body .main-index section .contact-information__box .contact-information__text div h3, body .main-index .main-location section .contact-information__box div .contact-information__text h3, body .main-index .main-location section .contact-information__box .contact-information__text div h3, .main-location section body .main-index .contact-information__box div .contact-information__text h3, .main-location section body .main-index .contact-information__box .contact-information__text div h3 {
+        margin: .3125rem 0;
+        text-align: center; }
+      body .main-index section .rent-button, .main-location section body .main-index .contact-information__box .rent-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: .4375rem 0;
+        letter-spacing: normal; }
+        body .main-index section .rent-button .rent-information, .main-location section body .main-index .contact-information__box .rent-button .rent-information {
+          border-top: 1px solid #9999;
+          padding-top: .625rem; }
+        body .main-index section .rent-button button, .main-location section body .main-index .contact-information__box .rent-button button, body .main-index section .rent-button input, .main-location section body .main-index .contact-information__box .rent-button input {
+          margin-top: 1.5625rem; }
+    body .main-index .section-featuredCar {
+      padding: 1.875rem 0; }
+      body .main-index .section-featuredCar div p, body .main-index .section-featuredCar div .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text body .main-index .section-featuredCar div h3 {
+        margin: .3125rem 0; }
+  body .main-cars {
+    margin: auto; }
+    body .main-cars h2 {
+      margin: 10px; }
+    body .main-cars section, body .main-cars .main-location section .contact-information__box, .main-location section body .main-cars .contact-information__box {
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.25rem; }
+      body .main-cars section article, body .main-cars .main-location section .contact-information__box article, .main-location section body .main-cars .contact-information__box article {
+        width: 12.5rem;
+        height: 25rem;
+        margin: auto; }
+        body .main-cars section article div p, body .main-cars .main-location section .contact-information__box article div p, .main-location section body .main-cars .contact-information__box article div p, body .main-cars .main-location section article div .contact-information__box .contact-information__text h3, .main-location body .main-cars section article div .contact-information__box .contact-information__text h3, .main-location body .main-cars section .contact-information__box .contact-information__text article div h3, body .main-cars .main-location section .contact-information__box article div .contact-information__text h3, body .main-cars .main-location section .contact-information__box .contact-information__text article div h3, .main-location section body .main-cars .contact-information__box article div .contact-information__text h3, .main-location section body .main-cars .contact-information__box .contact-information__text article div h3 {
+          font-size: .9375rem; }
+        body .main-cars section article div div, body .main-cars .main-location section .contact-information__box article div div, .main-location section body .main-cars .contact-information__box article div div {
+          margin: .625rem 0;
+          padding: .3125rem 0;
+          border-top: 1px solid #999; }
+          body .main-cars section article div div button, body .main-cars .main-location section .contact-information__box article div div button, .main-location section body .main-cars .contact-information__box article div div button, body .main-cars section article div div input, body .main-cars .main-location section .contact-information__box article div div input, .main-location section body .main-cars .contact-information__box article div div input {
+            margin-right: .625rem;
+            padding: .3125rem; }
+            body .main-cars section article div div button a, body .main-cars .main-location section .contact-information__box article div div button a, .main-location section body .main-cars .contact-information__box article div div button a, body .main-cars section article div div input a, body .main-cars .main-location section .contact-information__box article div div input a, .main-location section body .main-cars .contact-information__box article div div input a {
+              font-size: .75rem; }
+          body .main-cars section article div div a, body .main-cars .main-location section .contact-information__box article div div a, .main-location section body .main-cars .contact-information__box article div div a {
+            font-size: .75rem; }
+  body .main-contact {
+    margin: 1.875rem; }
+    body .main-contact .box-container__contact {
+      margin: auto;
+      width: 31.25rem; }
+      body .main-contact .box-container__contact p, body .main-contact .box-container__contact .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text body .main-contact .box-container__contact h3 {
+        max-width: 23.75rem; }
+      body .main-contact .box-container__contact .box-form {
+        padding: 0;
+        max-width: 25rem; }
+        body .main-contact .box-container__contact .box-form form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          max-width: 25rem; }
+          body .main-contact .box-container__contact .box-form form fieldset {
+            padding: .625rem; }
+            body .main-contact .box-container__contact .box-form form fieldset legend {
+              margin: auto;
+              max-width: 18.75rem;
+              height: 1.125rem; }
+            body .main-contact .box-container__contact .box-form form fieldset input {
+              margin: auto;
+              max-width: 18.75rem;
+              height: 1.125rem; }
+            body .main-contact .box-container__contact .box-form form fieldset textarea {
+              width: 18.75rem;
+              min-height: 5.3125rem; }
+    body .main-contact .contact-information {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0; }
+  body .main-location {
+    margin: 1.875rem auto; }
+    body .main-location section div iframe, body .main-location section .contact-information__box div iframe {
+      width: 26.875rem;
+      height: 31.25rem;
+      margin: auto; }
+    body .main-location .contact-information__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto; }
+      body .main-location .contact-information__box div {
+        text-align: center; } }
+
+@media only screen and (max-width: 480px) {
+  .index-body header {
+    border-bottom: 2px solid #e2e2e2; }
+    .index-body header nav .material-symbols-outlined {
+      display: block;
+      color: #e2e2e2; }
+      .index-body header nav .material-symbols-outlined ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        background-color: #3d3a3e; }
+        .index-body header nav .material-symbols-outlined ul li {
+          text-align: center;
+          padding: .9375rem;
+          border-bottom: 1px solid #777; }
+    .index-body header nav #menu-toggle:checked ~ .header-navbar {
+      display: flex; }
+  .index-body .main-index {
+    max-width: 37.5rem;
+    margin: auto; }
+    .index-body .main-index section, .index-body .main-index .main-location section .contact-information__box, .main-location section .index-body .main-index .contact-information__box {
+      margin: 1.875rem; }
+    .index-body .main-index .section-aboutUs p, .index-body .main-index .section-aboutUs .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .index-body .main-index .section-aboutUs h3 {
+      font-size: .75rem;
+      max-width: 9.375rem; }
+    .index-body .main-index .section-aboutUs img {
+      transform: scale(0.7);
+      margin: 0; }
+    .index-body .main-index .section-feacturedCar div {
+      margin-bottom: .625rem;
+      margin-top: 0; }
+    .index-body .main-index .section-feacturedCar img {
+      width: 14rem;
+      height: 12.5rem;
+      transform: scale(0.6);
+      margin: 0; }
+    .index-body .main-index .section-feacturedCar .rent-button a {
+      margin-top: .625rem;
+      padding-top: 1.25rem; }
+  .index-body .main-cars {
+    max-width: 100%;
+    margin: auto; }
+    .index-body .main-cars section, .index-body .main-cars .main-location section .contact-information__box, .main-location section .index-body .main-cars .contact-information__box {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1.25rem; }
+      .index-body .main-cars section article, .main-location section .index-body .main-cars .contact-information__box article {
+        border-radius: 30px;
+        width: 18.75;
+        height: 31.25; }
+        .index-body .main-cars section article h3, .main-location section .index-body .main-cars .contact-information__box article h3 {
+          font-size: .8125rem; }
+        .index-body .main-cars section article div p, .main-location section .index-body .main-cars .contact-information__box article div p, .index-body .main-cars .main-location section article div .contact-information__box .contact-information__text h3, .main-location .index-body .main-cars section article div .contact-information__box .contact-information__text h3, .main-location .index-body .main-cars section .contact-information__box .contact-information__text article div h3, .index-body .main-cars .main-location section .contact-information__box article div .contact-information__text h3, .index-body .main-cars .main-location section .contact-information__box .contact-information__text article div h3, .main-location section .index-body .main-cars .contact-information__box article div .contact-information__text h3, .main-location section .index-body .main-cars .contact-information__box .contact-information__text article div h3 {
+          font-size: .6875rem; }
+        .index-body .main-cars section article div div, .main-location section .index-body .main-cars .contact-information__box article div div {
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column-reverse;
+          margin: 0;
+          margin-top: .625rem; }
+  .index-body .main-contact {
+    margin: auto; }
+    .index-body .main-contact div {
+      width: 100%; }
+      .index-body .main-contact div h2 {
+        font-size: 1.5rem; }
+      .index-body .main-contact div p, .index-body .main-contact div .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .index-body .main-contact div h3 {
+        font-size: .8rem;
+        width: 15.625;
+        margin: .3125rem 0; }
+      .index-body .main-contact div .box-form {
+        width: 20.625rem;
+        margin: .625rem 0; }
+        .index-body .main-contact div .box-form form {
+          margin: auto;
+          max-width: 30rem; }
+          .index-body .main-contact div .box-form form fieldset legend {
+            margin: auto;
+            width: 15.625rem;
+            height: 1.125rem; }
+          .index-body .main-contact div .box-form form fieldset input {
+            margin: auto;
+            width: 15.625rem;
+            height: 1.125rem; }
+          .index-body .main-contact div .box-form form fieldset textarea {
+            width: 15.625;
+            height: 1.875; }
+        .index-body .main-contact div .box-form .contact-information {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          font-size: 10px;
+          margin-left: 0; }
+  .index-body .main-location {
+    margin: auto; }
+    .index-body .main-location section h2 {
+      font-size: 1.1875; }
+    .index-body .main-location section p, .index-body .main-location section .contact-information__box .contact-information__text h3 {
+      font-size: .75rem; }
+    .index-body .main-location section .box-map iframe {
+      width: 18.75;
+      height: 25rem; }
+    .index-body .main-location div .contact-information__box div h3 {
+      font-size: .75rem; }
+    .index-body .main-location div .contact-information__box div p, .index-body .main-location div section .contact-information__box div .contact-information__text h3, .index-body .main-location section div .contact-information__box div .contact-information__text h3, .index-body .main-location div section .contact-information__box .contact-information__text div h3, .index-body .main-location section div .contact-information__box .contact-information__text div h3 {
+      font-size: .75rem; }
+  .index-body .accordion .accordion-flush {
+    width: 18.75rem; }
+  .index-body footer {
+    border-top: 2px solid #e2e2e2; }
+    .index-body footer div .footer-socialMedia {
+      display: grid;
+      grid-template-areas: "instagram facebook" "whatsapp emailFt";
+      grid-gap: 1.25rem;
+      row-gap: 0; }
+      .index-body footer div .footer-socialMedia .instagram {
+        grid-area: instagram; }
+      .index-body footer div .footer-socialMedia .facebook {
+        grid-area: facebook; }
+      .index-body footer div .footer-socialMedia .whatsapp {
+        grid-area: whatsapp; }
+      .index-body footer div .footer-socialMedia .email-ft {
+        grid-area: emailFt; }
+      .index-body footer div .footer-socialMedia li a {
+        font-size: .75rem; }
+    .index-body footer p, .index-body footer .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .index-body footer h3 {
+      font-size: .4375; }
+    .index-body footer nav .footer-line ul {
+      font-size: .5rem; } }

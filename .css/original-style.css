@@ -544,7 +544,7 @@ footer p{
 
 /* ------- IPAD MINI SCREEN -------- */
 
-@media only screen and (max-width:768px){
+
     
     /* ------- INDEX STYLE -------*/
     /* ------- MAIN -------*/
@@ -691,7 +691,7 @@ footer p{
         align-items: center;
         margin-left: 0;
     }
-}
+
     /* -------- LOCATION STYLE --------*/
     .main-location{
         margin: 1.875rem auto;

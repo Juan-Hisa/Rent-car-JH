@@ -22,10 +22,11 @@
             }
         }
     .contact-information__box{
-        @include flex;
+        @extend section;
+        justify-content: center;
         margin-right: 25rem;
         .contact-information__text{
-            text-align: left;
+            text-align:left;
             p{
                 margin:.625rem 0;
             }
