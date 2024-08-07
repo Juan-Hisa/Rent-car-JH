@@ -1,25 +1,26 @@
 
 /* ---- UTILITIES -----*/
-@import "./utilities/_mixins.scss";
-@import "./utilities/_maps.scss";
+@import "./utilities/maps";
+@import "./utilities/mixins";
 
 /* ----- BASE -----*/
-@import "./base/_reset.scss";
+@import "./base/reset";
 
 /* ----- LAYOUT -----*/
-@import "./layout/_header.scss";
-@import "./layout/_main-index.scss";
-@import "./layout/_main-cars.scss";
-@import "./layout/_main-contact.scss";
-@import "./layout/_main-location.scss";
-@import "./layout/_footer.scss";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-cars";
+@import "./layout/main-contact";
+@import "./layout/main-location";
+@import "./layout/main-location";
+@import "./layout/footer";
 
 /* ----- COMPONENTS ------- */
-@import "./components/_boostrap-faq.scss";
-@import "./components/_buttons.scss";
-@import "./components/_inputs.scss";
-@import "./components/_navbar.scss";
+@import "./components/boostrap-faq";
+@import "./components/buttons";
+@import "./components/inputs";
+@import "./components/navbar";
 
 /* ---- MEDIA QUERIES -----*/
-@import "./layout/media_queries/media768px";
-@import "./layout/media_queries/media480px";
+@import "./layout/media/media768px";
+@import "./layout/media/media480px";

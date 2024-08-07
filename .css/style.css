@@ -199,6 +199,34 @@ header {
         .main-location section .contact-information__box .contact-information__text p, .main-location section .contact-information__box .contact-information__text h3 {
           margin: .625rem 0; }
 
+/* ----- LOCATION PAGE ------*/
+.main-location {
+  margin: 1rem;
+  color: #e2e2e2;
+  border-radius: 5px;
+  background-color: #232328;
+  padding: .625rem; }
+  .main-location section, .main-location section .contact-information__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-location section h2, .main-location section .contact-information__box h2 {
+      margin: .3125rem 0; }
+    .main-location section p, .main-location section .contact-information__box p, .main-location section .contact-information__box .contact-information__text h3 {
+      margin: .3125rem 0; }
+    .main-location section .box-map iframe {
+      margin: 1rem 2rem;
+      background-color: #49444b;
+      border-radius: 5px;
+      padding: 1rem; }
+    .main-location section .contact-information__box {
+      justify-content: center;
+      margin-right: 25rem; }
+      .main-location section .contact-information__box .contact-information__text {
+        text-align: left; }
+        .main-location section .contact-information__box .contact-information__text p, .main-location section .contact-information__box .contact-information__text h3 {
+          margin: .625rem 0; }
+
 footer {
   background-color: #232328;
   display: flex;
