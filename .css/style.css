@@ -51,7 +51,7 @@ header {
         border-radius: 100%; }
       .login-box div a .material-symbols-outlined {
         display: none;
-        border-radius: 100%; }
+        cursor: pointer; }
 
 .main-index {
   color: #e2e2e2;
@@ -123,21 +123,6 @@ header {
       .main-cars section article div p, .main-cars .main-location section .contact-information__box article div p, .main-location section .main-cars .contact-information__box article div p, .main-cars .main-location section article div .contact-information__box .contact-information__text h3, .main-location .main-cars section article div .contact-information__box .contact-information__text h3, .main-location .main-cars section .contact-information__box .contact-information__text article div h3, .main-cars .main-location section .contact-information__box article div .contact-information__text h3, .main-cars .main-location section .contact-information__box .contact-information__text article div h3, .main-location section .main-cars .contact-information__box article div .contact-information__text h3, .main-location section .main-cars .contact-information__box .contact-information__text article div h3 {
         margin: .3125rem;
         text-align: center; }
-      .main-cars section article div div button, .main-cars .main-location section .contact-information__box article div div button, .main-location section .main-cars .contact-information__box article div div button, .main-cars section article div div input, .main-cars .main-location section .contact-information__box article div div input, .main-location section .main-cars .contact-information__box article div div input {
-        margin: .3125rem;
-        background-color: #399d4f77;
-        border-radius: 20px;
-        padding: 1.25rem;
-        margin-right: 6.25rem;
-        margin-top: 1.25rem; }
-        .main-cars section article div div button:hover, .main-location section .main-cars .contact-information__box article div div button:hover, .main-cars section article div div input:hover, .main-location section .main-cars .contact-information__box article div div input:hover {
-          background-color: #399d4f; }
-        .main-cars section article div div button a, .main-cars .main-location section .contact-information__box article div div button a, .main-location section .main-cars .contact-information__box article div div button a, .main-cars section article div div input a, .main-cars .main-location section .contact-information__box article div div input a, .main-location section .main-cars .contact-information__box article div div input a {
-          color: #e2e2e2; }
-      .main-cars section article div div a, .main-cars .main-location section .contact-information__box article div div a, .main-location section .main-cars .contact-information__box article div div a {
-        color: #e2e2e2; }
-        .main-cars section article div div a:hover, .main-location section .main-cars .contact-information__box article div div a:hover {
-          border-bottom: 1px solid #e2e2e2; }
 
 /* ----- MAIN CONTACT -----*/
 .main-contact {
@@ -154,7 +139,7 @@ header {
     .main-contact .box-container__contact h2 {
       margin: .625rem 0; }
     .main-contact .box-container__contact p, .main-contact .box-container__contact .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .main-contact .box-container__contact h3 {
-      text-align: center;
+      text-align: justify;
       max-width: 34.375rem;
       margin: .625rem; }
     .main-contact .box-container__contact .box-form {
@@ -178,9 +163,47 @@ header {
           grid-area: email; }
         .main-contact .box-container__contact .box-form form .message {
           grid-area: message; }
-      .main-contact .box-container__contact .box-form div .contact-information h3 {
-        margin: .625rem 0; }
+        .main-contact .box-container__contact .box-form form fieldset {
+          color: transparent;
+          border: 2px solid #9999;
+          border-radius: 5px;
+          margin: 0.625rem 0;
+          padding: .3125rem;
+          color: #9999; }
+          .main-contact .box-container__contact .box-form form fieldset:hover {
+            border: 2px solid #e2e2e2;
+            border-radius: 5px;
+            color: #e2e2e2; }
+          .main-contact .box-container__contact .box-form form fieldset legend {
+            margin: 0 .625rem;
+            padding: 0 .625rem; }
+          .main-contact .box-container__contact .box-form form fieldset input {
+            padding: .625rem;
+            width: 25rem;
+            border-bottom: 1px solid #999;
+            color: #999;
+            max-width: 18.75rem; }
+            .main-contact .box-container__contact .box-form form fieldset input:hover {
+              border-bottom: 1px solid #e2e2e2;
+              color: #e2e2e2; }
+          .main-contact .box-container__contact .box-form form fieldset textarea {
+            margin: .625rem;
+            width: 95%;
+            resize: none;
+            min-height: 12.5rem;
+            max-height: 18.75rem;
+            font-family: "Barlow", sans-serif;
+            background-color: transparent;
+            border-radius: 5px;
+            color: #999;
+            padding: .125rem .3125rem; }
+            .main-contact .box-container__contact .box-form form fieldset textarea:hover {
+              border: 2px solid #e2e2e2;
+              border-radius: 5px;
+              color: #e2e2e2; }
       .main-contact .box-container__contact .box-form div .contact-information p, .main-contact .box-container__contact .box-form div .contact-information .main-location section .contact-information__box .contact-information__text h3, .main-location section .contact-information__box .contact-information__text .main-contact .box-container__contact .box-form div .contact-information h3 {
+        margin: .625rem 0; }
+      .main-contact .box-container__contact .box-form div .contact-information h3 {
         margin: .625rem 0; }
 
 /* ----- LOCATION PAGE ------*/
@@ -284,7 +307,8 @@ footer {
     background-color: #399d4f;
     border-radius: 10px;
     padding: .625rem;
-    margin-right: .625rem; }
+    margin-right: .625rem;
+    transition: background-color 0.3s ease; }
     .main-index section .rent-button button:hover, .main-location section .main-index .contact-information__box .rent-button button:hover, .main-index section .rent-button input:hover, .main-location section .main-index .contact-information__box .rent-button input:hover {
       background-color: #399d4f77;
       border: 1px solid #e2bf42; }
@@ -296,17 +320,33 @@ footer {
       border-bottom: 1px solid #e2e2e2; }
 
 /* ----- CARS PAGE -----*/
-.main-cars section div button, .main-cars .main-location section .contact-information__box div button, .main-location section .main-cars .contact-information__box div button, .main-cars section div input, .main-cars .main-location section .contact-information__box div input, .main-location section .main-cars .contact-information__box div input {
+.main-cars section div div button, .main-cars .main-location section .contact-information__box div div button, .main-location section .main-cars .contact-information__box div div button, .main-cars section div div input, .main-cars .main-location section .contact-information__box div div input, .main-location section .main-cars .contact-information__box div div input {
   margin: .3125rem;
   background-color: #399d4f77;
   border-radius: 20px;
-  padding: 1.25rem;
-  margin-right: 6.25rem;
-  margin-top: 1.25rem; }
-  .main-cars section div button:hover, .main-location section .main-cars .contact-information__box div button:hover, .main-cars section div input:hover, .main-location section .main-cars .contact-information__box div input:hover {
+  padding: .9rem;
+  margin-top: 1.25rem;
+  transition: background-color 0.3s ease; }
+  .main-cars section div div button:hover, .main-location section .main-cars .contact-information__box div div button:hover, .main-cars section div div input:hover, .main-location section .main-cars .contact-information__box div div input:hover {
     background-color: #399d4f; }
-  .main-cars section div button a, .main-cars .main-location section .contact-information__box div button a, .main-location section .main-cars .contact-information__box div button a, .main-cars section div input a, .main-cars .main-location section .contact-information__box div input a, .main-location section .main-cars .contact-information__box div input a {
+  .main-cars section div div button a, .main-cars .main-location section .contact-information__box div div button a, .main-location section .main-cars .contact-information__box div div button a, .main-cars section div div input a, .main-cars .main-location section .contact-information__box div div input a, .main-location section .main-cars .contact-information__box div div input a {
     color: #e2e2e2; }
+
+.main-contact .box-container__contact .box-form form .box-button {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1; }
+  .main-contact .box-container__contact .box-form form .box-button .contact-form__button {
+    border-radius: 7px;
+    padding: 10px 18px;
+    background-color: #399D4F77;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #e2e2e2ee;
+    transition: background-color 0.3s; }
+    .main-contact .box-container__contact .box-form form .box-button .contact-form__button:hover {
+      background-color: #399d4f;
+      box-shadow: 2px 0px 2px 0px #399D4F19; }
 
 /* ---- CONTACT INPUTS -----*/
 .main-contact .box-form form input[type="number"]::-webkit-outer-spin-button, .main-contact .box-form form input[type="number"]::-webkit-inner-spin-button {
@@ -378,9 +418,23 @@ nav .header-navbar {
   nav .header-navbar li {
     margin: 0 .3125rem; }
     nav .header-navbar li a {
-      color: #e2e2e2; }
-      nav .header-navbar li a:hover {
-        border-bottom: 1px solid #d9d9d9; }
+      position: relative;
+      display: inline-block;
+      color: #e2e2e2;
+      padding-bottom: .3125rem; }
+      nav .header-navbar li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #d9d9d9;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ease-in-out; }
+      nav .header-navbar li a:hover::after {
+        transform: scaleX(1); }
 
 /* ----- FOOTER NAVBAR -----*/
 footer nav div {
@@ -461,7 +515,7 @@ footer nav div {
             padding: .1875rem; }
             .main-cars section article div div div button a, .main-cars .main-location section .contact-information__box article div div div button a, .main-location section .main-cars .contact-information__box article div div div button a, .main-cars section article div div div input a, .main-cars .main-location section .contact-information__box article div div div input a, .main-location section .main-cars .contact-information__box article div div div input a {
               font-size: .75rem; }
-          .main-cars section article div div div a, .main-cars .main-location section .contact-information__box article div div div a, .main-location section .main-cars .contact-information__box article div div div a {
+          .main-cars section article div div div .car-info, .main-location section .main-cars .contact-information__box article div div div .car-info {
             font-size: .75rem; }
   .main-contact {
     margin: 1.875rem; }
@@ -572,41 +626,40 @@ footer nav div {
         .main-cars section article div div, .main-cars .main-location section .contact-information__box article div div, .main-location section .main-cars .contact-information__box article div div {
           border: none;
           display: flex;
-          justify-content: center;
-          align-items: center;
           flex-direction: column-reverse;
+          align-items: center;
           margin: 0;
           margin-top: .625rem; }
   .main-contact {
     margin: auto; }
-    .main-contact div {
+    .main-contact .box-container__contact {
       width: 100%; }
-      .main-contact div .form-tittle {
+      .main-contact .box-container__contact .form-tittle {
         font-size: 1.5rem; }
-      .main-contact div .form-p {
+      .main-contact .box-container__contact .form-p {
         font-size: .8rem;
         width: 15.625;
         margin: .3125rem 0; }
-      .main-contact div .box-form {
+      .main-contact .box-container__contact .box-form {
         width: 20.625rem;
         margin: .625rem 0; }
-        .main-contact div .box-form .contact-form {
+        .main-contact .box-container__contact .box-form .contact-form {
           margin: auto;
           max-width: 30rem; }
-          .main-contact div .box-form .contact-form fieldset legend {
+          .main-contact .box-container__contact .box-form .contact-form fieldset legend {
             margin: auto;
             width: 15.625rem;
             height: 1.125rem; }
-          .main-contact div .box-form .contact-form fieldset input {
+          .main-contact .box-container__contact .box-form .contact-form fieldset input {
             margin: auto;
             width: 15.625rem;
             height: 1.125rem; }
-          .main-contact div .box-form .contact-form fieldset textarea {
+          .main-contact .box-container__contact .box-form .contact-form fieldset textarea {
             width: 15.625rem;
             height: 1.875rem; }
-          .main-contact div .box-form .contact-form fieldset .message {
+          .main-contact .box-container__contact .box-form .contact-form fieldset .message {
             width: 15.625rem; }
-        .main-contact div .box-form .contact-information {
+        .main-contact .box-container__contact .box-form .contact-information {
           padding: 0;
           margin: 0;
           text-align: center;

@@ -82,8 +82,9 @@
                 
                     div{
                         border: none;
-                        @include flex;
+                        display: flex;
                         flex-direction: column-reverse;
+                        align-items: center;
                         margin: 0;
                         margin-top: .625rem;
                     }
@@ -94,7 +95,7 @@
     }
     .main-contact{
         margin: auto;
-        div{
+        .box-container__contact{
             width: 100%;
             .form-tittle{
                 font-size: 1.5rem;

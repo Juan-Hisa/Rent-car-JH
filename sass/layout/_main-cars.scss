@@ -34,28 +34,6 @@
                     margin: .3125rem;
                     text-align: center;
                 }
-                div{
-                    button{
-                        margin: .3125rem;
-                        background-color: map-get($colors , color7 );
-                        border-radius: 20px;
-                        padding: 1.25rem;
-                        margin-right: 6.25rem;
-                        margin-top: 1.25rem;
-                        &:hover{
-                            background-color: map-get($colors , color6 );
-                        }
-                        a{
-                            color: map-get($colors , color1 );
-                        }
-                    }
-                    a{
-                        color: map-get($colors , color1 );
-                        &:hover{
-                            border-bottom: 1px solid map-get($colors , color1 );
-                        }
-                    }
-                }
             }
         }
     }
