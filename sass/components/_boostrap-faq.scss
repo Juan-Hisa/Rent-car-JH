@@ -9,13 +9,15 @@
 }
 
 .accordion-button{
-    @extend .accordion-body;
+    background-color: map-get($colors , color3 );
+    color:  map-get($colors ,   color1 );
 }
 .accordion-button:not(.collapsed){
-    @extend .accordion-body;
+    background-color: map-get($colors , color3 );
+    color:  map-get($colors ,   color1 );
 }
 
 .accordion-button .collapsed{ 
-    @extend .accordion-body;
+    background-color: map-get($colors , color3 );
     color: map-get($colors , color4 )
 }

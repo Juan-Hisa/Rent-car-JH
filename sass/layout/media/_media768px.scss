@@ -1,5 +1,4 @@
 @media only screen and (max-width:768px){
-body{
     header{
         h1{
             display: none;
@@ -14,57 +13,54 @@ body{
                 font-size: 1.5rem;
             }
             border-radius: 20px;
-            .section_imgAboutUs{
+            p{
+                letter-spacing:normal;
+                font-size: 1rem;
+                text-align: center;
+                width: 15.625rem;
+            }
+        }
+        .section-aboutUs{
+            img{
                 border-radius: 100%;
                 width: 12.5rem;
                 height: 12.5rem;
                 transform: scale(.9);
             }
-            .section-img_featured{
+        }
+        .section-featuredCar{
+            padding: 1.875rem 0;
+            img{
                 border-radius: 100%;
                 width: 14.625rem;
                 height: 12.5rem;
                 transform: scale(.85);
-            }
-            p{
-                letter-spacing:normal;
-                    font-size: 1rem;
-                    text-align: center;
-                    width: 15.625rem;
-            }
-            div{
-                p{
-                    margin: .3125rem 0;
-                    text-align: center;
+                div{
+                    p{
+                        margin: .3125rem 0;
+                        text-align: center;
+                    }
                 }
             }
+        }
             .rent-button{
                 @include flex_colum-center;
                 flex-direction: column-reverse;
                 margin: .4375rem 0;
                 letter-spacing: normal;
+                button{
+                    margin-top: 1.5625rem;
+                }
                 .rent-information{
                     border-top: 1px solid map-get($colors , color5 );
                     padding-top: .625rem;
                 }
-                button{
-                    margin-top: 1.5625rem;
-                }
             }
-        }
-        .section-featuredCar{
-            padding: 1.875rem 0;
-            div{
-                p{
-                    margin: .3125rem 0;
-                }
-            }
-        }
     }
     .main-cars{
         margin: auto;
         h2{
-            margin: 10px;
+            margin: .625rem;
         }
         section{
             margin: auto;
@@ -83,15 +79,18 @@ body{
                         margin: .625rem 0;
                         padding: .3125rem 0;
                         border-top: 1px solid map-get($colors , color4);
-                        button{
-                            margin-right: .625rem;
-                            padding: .3125rem;
+                        div{
+                            button{
+                                margin: .625rem;
+                                padding: .1875rem;
+                                
+                                a{
+                                    font-size: .75rem;
+                                }
+                            }
                             a{
                                 font-size: .75rem;
                             }
-                        }
-                        a{
-                            font-size: .75rem ;
                         }
                     }
                 }
@@ -157,5 +156,5 @@ body{
             }
         }
     }
-}
+    
 }

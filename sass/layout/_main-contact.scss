@@ -18,44 +18,47 @@
             max-width: 34.375rem;
             margin: .625rem;
         }
-    }
-}
-.box-form{
-    background-color: map-get($colors , color3);
-    border-radius: 5px;
-    padding: 0 1.875rem;
-    form{
-        margin: auto;
-        padding: 1.25rem;
-        border-radius: 5px;
-        display: grid;
-        grid-template-areas:
-            "name surname"
-            "phone email"
-            "message message";
-        grid-gap: 1.25rem;
-        .name{
-            grid-area: name;
-        }
-        .surname{
-            grid-area: surname;
-        }
-        .phone{
-            grid-area: phone map-get($colors , color1 );
-        }
-        .email{
-            grid-area: email;
-        }
-        .message{
-            grid-area: message;
-        }
-        
-    }
-    div{
-        .contact-information{
-            p,h3{
-                margin: .625rem 0;
+        .box-form{
+            background-color: map-get($colors , color3);
+            border-radius: 5px;
+            padding: 0 1.875rem;
+            form{
+                margin: auto;
+                padding: 1.25rem;
+                border-radius: 5px;
+                display: grid;
+                grid-template-areas:
+                    "name surname"
+                    "phone email"
+                    "message message";
+                grid-gap: 1.25rem;
+                .name{
+                    grid-area: name;
+                }
+                .surname{
+                    grid-area: surname;
+                }
+                .phone{
+                    grid-area: phone map-get($colors , color1 );
+                }
+                .email{
+                    grid-area: email;
+                }
+                .message{
+                    grid-area: message;
+                }
+                
             }
-        }    
+            div{
+                .contact-information{
+                    h3{
+                        margin: .625rem 0;
+                    }
+                    p{
+                        margin: .625rem 0;
+                    }
+                }    
+            }
+        }
     }
 }

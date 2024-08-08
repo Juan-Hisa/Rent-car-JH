@@ -1,12 +1,12 @@
 @media only screen and (max-width:480px) {
-    .index-body{
         header{
             border-bottom: 2px solid map-get($colors , color1 );
             nav{
                 .material-symbols-outlined{
                     display: block;
                     color: map-get($colors , color1);
-                ul{
+                }
+                .header-navbar{
                     display: none;
                     flex-direction: column;
                     position: absolute;
@@ -20,199 +20,194 @@
                         padding: .9375rem;
                         border-bottom: 1px solid #777;
                     }
-                    }
                 }
                 #menu-toggle:checked ~ .header-navbar {
                     display: flex;
-                    
+                }
+            }    
+        }
+    .main-index{
+        max-width: 37.5rem;
+        margin: auto;
+        section{
+            margin: 1.875rem;
+        }
+        .section-aboutUs{
+            p{
+                font-size: .75rem;
+                max-width: 9.375rem;
+            }
+            img{
+                transform: scale(.7);
+                margin: 0;
+            }
+        }
+        .section-feacturedCar{
+            div{
+                margin-bottom: .625rem;
+                margin-top: 0;
+            }
+            img{
+                width: 14rem;
+                height: 12.5rem;
+                transform:scale(.6);
+                margin:0;
+            }
+            .rent-button{
+                a{
+                    margin-top: .625rem;
+                    padding-top: 1.25rem;
                 }
             }
         }
-        .main-index{
-            max-width: 37.5rem;
-            margin: auto;
-            section{
-                margin: 1.875rem;
-            }
-            .section-aboutUs{
-                p{
-                    font-size: .75rem;
-                    max-width: 9.375rem;
+    }
+    .main-cars{
+        max-width: 100%;
+        margin: auto;
+        section{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1.25rem;
+            article{
+                border-radius: 30px;
+                width: 18.75;
+                height: 31.25;
+                h3{
+                    font-size: .8125rem;
                 }
-                img{
-                    transform: scale(.7);
-                    margin: 0;
-                }
-            }
-            .section-feacturedCar{
                 div{
-                    margin-bottom: .625rem;
-                    margin-top: 0;
-                }
-                img{
-                    width: 14rem;
-                    height: 12.5rem;
-                    transform:scale(.6);
-                    margin:0;
-                }
-                .rent-button{
-                    a{
-                        margin-top: .625rem;
-                        padding-top: 1.25rem;
+                    p{
+                        font-size: .6875rem;
                     }
-                }
-            }
-        }
-        .main-cars{
-            max-width: 100%;
-            margin: auto;
-            section{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 1.25rem;
-                article{
-                    border-radius: 30px;
-                    width: 18.75;
-                    height: 31.25;
-                    h3{
-                        font-size: .8125rem;
-                    }
+                
                     div{
-                        p{
-                            font-size: .6875rem;
-                        }
-                    }
-                    div{
-                        div{
-                            border: none;
-                            @include flex;
-                            flex-direction: column-reverse;
-                            margin: 0;
-                            margin-top: .625rem;
-                        }
-                    }
-                }
-            }
-        
-        }
-        .main-contact{
-            margin: auto;
-            div{
-                width: 100%;
-                h2{
-                    font-size: 1.5rem;
-                }
-                p{
-                    font-size: .8rem;
-                    width: 15.625;
-                    margin: .3125rem 0; 
-                }
-                .box-form{
-                    width: 20.625rem;
-                    margin: .625rem 0;
-                    form{
-                        margin: auto;
-                        max-width: 30rem;
-                        fieldset{
-                            legend{
-                                margin: auto;
-                                width: 15.625rem;
-                                height: 1.125rem;
-                            }
-                            input{
-                                margin: auto;
-                                width: 15.625rem;
-                                height: 1.125rem;
-                            }
-                            textarea{
-                                width: 15.625;
-                                height: 1.875;
-                            }
-                        }
-                    }
-                    .contact-information{
-                        padding: 0;
+                        border: none;
+                        @include flex;
+                        flex-direction: column-reverse;
                         margin: 0;
-                        text-align: center;
-                        font-size: 10px;
-                        margin-left: 0;
+                        margin-top: .625rem;
                     }
                 }
             }
         }
-        .main-location{
-            margin: auto;
-            section{
-                h2{
-                    font-size: 1.1875;
-                }
-                p{
-                    font-size: .75rem;
-                }
-                .box-map{
-                    iframe{
-                        width: 18.75;
-                        height: 25rem;
-                    }
-                }
+    
+    }
+    .main-contact{
+        margin: auto;
+        div{
+            width: 100%;
+            .form-tittle{
+                font-size: 1.5rem;
             }
-            div{
-                .contact-information__box{
-                    div{
-                        h3{
-                            font-size: .75rem;
+            .form-p{
+                font-size: .8rem;
+                width: 15.625;
+                margin: .3125rem 0; 
+            }
+            .box-form{
+                width: 20.625rem;
+                margin: .625rem 0;
+                .contact-form{
+                    margin: auto;
+                    max-width: 30rem;
+                    fieldset{
+                        legend{
+                            margin: auto;
+                            width: 15.625rem;
+                            height: 1.125rem;
                         }
-                        p{
-                            font-size: .75rem;
+                        input{
+                            margin: auto;
+                            width: 15.625rem;
+                            height: 1.125rem;
+                        }
+                        textarea{
+                            width: 15.625rem;
+                            height: 1.875rem;
+                        }
+                        .message{
+                            width: 15.625rem;
                         }
                     }
+                }
+                .contact-information{
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    font-size: 10px;
+                    margin-left: 0;
                 }
             }
         }
-        .accordion{
-            .accordion-flush{
-                width: 18.75rem;
-            }
-        }
-        footer{
-            border-top:2px solid #e2e2e2;
-            div{
-                .footer-socialMedia{
-                    display: grid;
-                    grid-template-areas:
-                        "instagram facebook"
-                        "whatsapp emailFt";
-                        grid-gap: 1.25rem;
-                        row-gap: 0;
-                    .instagram{
-                        grid-area: instagram;
-                    }
-                    .facebook{
-                        grid-area: facebook;
-                    }
-                    .whatsapp{
-                        grid-area: whatsapp;
-                    }
-                    .email-ft{
-                        grid-area: emailFt;
-                    }
-                    li{
-                        a{
-                            font-size: .75rem;
-                        }
-                    }
-                }
+    }
+    .main-location{
+        margin: auto;
+        section{
+            h2{
+                font-size: 1.1875;
             }
             p{
-                font-size: .4375;
+                font-size: .75rem;
             }
-            nav{
-                .footer-line{
-                    ul{
-                        font-size: .5rem;
+            .box-map{
+                iframe{
+                    width: 18.75;
+                    height: 25rem;
+                }
+            }
+        }
+        div{
+            .contact-information__box{
+                div{
+                    h3{
+                        font-size: .75rem;
+                    }
+                    p{
+                        font-size: .75rem;
                     }
                 }
             }
-        }    
+        }
     }
+    
+    footer{
+        border-top:2px solid #e2e2e2;
+        div{
+            .footer-socialMedia{
+                display: grid;
+                grid-template-areas:
+                    "instagram facebook"
+                    "whatsapp emailFt";
+                    grid-gap: 1.25rem;
+                    row-gap: 0;
+                .instagram{
+                    grid-area: instagram;
+                }
+                .facebook{
+                    grid-area: facebook;
+                }
+                .whatsapp{
+                    grid-area: whatsapp;
+                }
+                .email-ft{
+                    grid-area: emailFt;
+                }
+                li{
+                    a{
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+        p{
+            font-size: .4375;
+        }
+        nav{
+            .footer-line{
+                ul{
+                    font-size: .5rem;
+                }
+            }
+        }
+    }    
 }

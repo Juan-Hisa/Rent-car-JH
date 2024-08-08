@@ -14,10 +14,14 @@
         article{
             @include flex_colum-center;
             padding: 0.75rem;
-            color: map-get($colors , color1 );;
-            background-color: map-get($colors , color2 );;
+            color: map-get($colors , color1 );
+            background-color: map-get($colors , color2 );
             margin: .9375rem;
             border-radius: 5px;
+            h3{
+                font-weight: 600;
+                margin-top: .3125rem;
+            }
             img{
                 width: 60%;
                 height: 60%;
@@ -25,20 +29,31 @@
                 border-radius: 20px;
                 margin: 1.25rem;
             }
-            h3{
-                font-weight: 600;
-                margin-top: .3125rem;
-            }
             div{
                 p{
                     margin: .3125rem;
                     text-align: center;
-
                 }
-                .car-info{
-                    color: map-get($colors , color1 );
-                    &:hover{
-                        border-bottom: 1px solid map-get($colors , color1 );;
+                div{
+                    button{
+                        margin: .3125rem;
+                        background-color: map-get($colors , color7 );
+                        border-radius: 20px;
+                        padding: 1.25rem;
+                        margin-right: 6.25rem;
+                        margin-top: 1.25rem;
+                        &:hover{
+                            background-color: map-get($colors , color6 );
+                        }
+                        a{
+                            color: map-get($colors , color1 );
+                        }
+                    }
+                    a{
+                        color: map-get($colors , color1 );
+                        &:hover{
+                            border-bottom: 1px solid map-get($colors , color1 );
+                        }
                     }
                 }
             }

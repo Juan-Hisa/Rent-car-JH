@@ -834,7 +834,7 @@ footer p{
         width: 20.625rem;
         margin: .625rem 0;
     }
-    fieldset legen, fieldset input{
+    fieldset legend, fieldset input{
         margin: auto;
         width: 15.625rem;
         height: 1.125rem;
