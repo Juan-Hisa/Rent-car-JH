@@ -1,4 +1,7 @@
 /* ----- BOOSTRAP MENU ----*/
+.accordion.butto.collapsed{
+    box-sizing: border-box;
+}
 .accordion-item{
     color:  map-get($colors , color1);
 }
