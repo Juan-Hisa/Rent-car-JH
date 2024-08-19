@@ -12,16 +12,19 @@
                 transition: background-color 0.3s ease;
                 &:hover{
                     background-color:  map-get($colors , color7);
-                    border: 1px solid  map-get($colors , color9);
                 }
                 a{
-                    color:  map-get($colors , color1 );
+                    color: #e2e2e2;
+                    &:hover{
+                        border-bottom: 1px solid #e2e2e2;
+                    }
                 }
             }
             .rent-information{
                 color: map-get($colors , color1 );
-                &:hover{
+                &:hover{ 
                     border-bottom: 1px solid  map-get($colors , color1);
+
                 }
             }
         }
@@ -29,6 +32,7 @@
 }
 
 /* ----- CARS PAGE -----*/
+
 .main-cars{
     section{
         div{

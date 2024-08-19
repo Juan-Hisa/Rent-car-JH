@@ -8,12 +8,13 @@ li{
 }
 a{
     text-decoration: none;
+    color: #e2e2e2;
 }
 button{
     all: unset;
 }
 input{
-    @extend button;
+    all:unset;
 }
 
 body{
