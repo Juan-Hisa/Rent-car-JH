@@ -36,18 +36,27 @@
     section{
         div{
             div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: .0625rem;
                 button{
                     margin: .3125rem;
                     background-color:  map-get($colors , color7);
                     border-radius: 20px;
-                    padding: .9rem;
+                    padding: .4rem;
                     margin-top: 1.25rem;
                     transition: background-color 0.3s ease;
+                    a{
+                        font-size: .8rem;
+                    }
                     &:hover{
                         background-color:  map-get($colors , color6);
                     }
-                    a{
-                        color: map-get($colors , color1);
+                    .car-info{
+                        font-size: .5rem;
+                        color: map-get($colors , color1); 
+
                     }
                 }   
             }

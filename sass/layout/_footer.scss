@@ -9,9 +9,6 @@ footer{
                 margin: 1.25rem 0;
                 a{
                     color: map-get($colors , color1);
-                    &:hover{
-                        border-bottom: 2px solid map-get($colors , color1);
-                    }
                 }
             }
         }

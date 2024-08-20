@@ -39,58 +39,14 @@
                     grid-area: surname;
                 }
                 .phone{
-                    grid-area: phone map-get($colors , color1 );
+                    grid-area: phone;
+                    color: map-get($colors , color1 );
                 }
                 .email{
                     grid-area: email;
                 }
                 .message{
                     grid-area: message;
-                }
-                fieldset{
-                    color: transparent;
-                    border: 2px solid #9999;
-                    border-radius: 5px;
-                    margin: 0.625rem 0;
-                    padding: .3125rem;
-                    color: #9999;
-                    &:hover{
-                        border: 2px solid #e2e2e2;
-                        border-radius: 5px;
-                        color: #e2e2e2;
-                    }
-                    legend{
-                        margin: 0 .625rem;
-                        padding: 0 .625rem;
-                    }
-                    input{
-                        padding: .625rem;
-                        width: 25rem;
-                        border-bottom: 1px solid #999;
-                        color: #999;
-                        max-width: 18.75rem;
-                        &:hover{
-                            border-bottom: 1px solid #e2e2e2;
-                            color: #e2e2e2;
-                        }
-                    }
-                    textarea{
-                        margin: .625rem;
-                        width: 95%;
-                        resize: none;
-                        min-height: 12.5rem;
-                        max-height: 18.75rem;
-                        font-family: "Barlow", sans-serif;
-                        background-color: transparent;
-                        border-radius: 5px;
-                        color: #999;
-                        padding: .125rem .3125rem;
-                        &:hover{
-                            border:2px solid #e2e2e2;
-                            border-radius: 5px;
-                            color: #e2e2e2;
-                        }
-                    }
                 }
             }
             div{
