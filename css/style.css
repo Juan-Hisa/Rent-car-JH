@@ -1,4 +1,59 @@
 /* ---- UTILITIES -----*/
+.main-index section, .main-index .main-location section .contact-information__box, .main-location section .main-index .contact-information__box {
+  animation: section 2s ease-out forwards; }
+
+@keyframes section {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.main-cars section, .main-cars .main-location section .contact-information__box, .main-location section .main-cars .contact-information__box {
+  animation: section 2s ease-out forwards; }
+
+@keyframes section {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.main-faq section, .main-faq .main-location section .contact-information__box, .main-location section .main-faq .contact-information__box {
+  animation: section 2s ease-out forwards; }
+
+@keyframes section {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.main-contact section, .main-contact .main-location section .contact-information__box, .main-location section .main-contact .contact-information__box {
+  animation: section 2s ease-out forwards; }
+
+@keyframes section {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.main-location div {
+  animation: section 2s ease-out forwards; }
+
+@keyframes div {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 /* ----- BASE -----*/
 * {
   margin: 0;
