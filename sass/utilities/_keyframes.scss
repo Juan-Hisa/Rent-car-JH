@@ -63,10 +63,10 @@
 }
 
 .main-location{
-    div{
+    section{
         animation: section 2s ease-out forwards;
     }
-    @keyframes div {
+    @keyframes section {
         0% {
             transform: translateY(50px);
             opacity: 0;
