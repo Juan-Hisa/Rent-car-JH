@@ -268,7 +268,8 @@ header {
     padding: 1rem; }
   .main-faq section details, .main-faq .main-location section .contact-information__box details, .main-location section .main-faq .contact-information__box details {
     background-color: #d9d9d9;
-    margin: 0rem 3rem; }
+    margin: 0rem 3rem;
+    padding: 0px 10px; }
     .main-faq section details summary, .main-faq .main-location section .contact-information__box details summary, .main-location section .main-faq .contact-information__box details summary {
       padding: .5rem;
       margin: .5rem; }
